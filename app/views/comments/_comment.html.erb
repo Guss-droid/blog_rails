@@ -2,7 +2,7 @@
   class="comment-<%= comment.id %> container"
   style="border: 1px solid black; padding: 1em; margin: 1em;"
 >
-  <%= comment.user.name %>
+  <%= comment.user.full_name %>
   <br/>
   <% if (comment.updated_at - comment.created_at) > 1 %>
     <span>Edited
